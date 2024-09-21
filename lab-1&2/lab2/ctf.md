@@ -52,6 +52,6 @@ Giờ để lấy được flag ta cần phải vượt qua các chướng ngạ
 
 => kết quả: 
   
-![alt text](images/image-31.png)
+![alt text](../images/image-31.png)
 
 
