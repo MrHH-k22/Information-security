@@ -1,8 +1,10 @@
-# 1. Injection code to delete file via vuln.c
+# 1. Privilege escalation
+
+source: 
 
 ![alt text](../images/image-32.png)
 
-Mục tiêu là thay đổi giá trị trở về của hàm main sao cho có thể chạy shellcode
+
 
 ### Shellcode
 
@@ -39,6 +41,11 @@ Dùng câu lệnh này để chỉ lấy các mã nhị phân của file sh và 
 ![alt text](../images/image-37.png)
 
 * Phiên bản 16.04 có cơ chế bảo vệ stack => tắt đi => tạo shell mới zsh cho phép thực thi
+
+- thêm 1 dummyfile để xóa
+
+![image](https://github.com/user-attachments/assets/8e3c502a-8e64-419c-b22a-c40a4c4edf98)
+
 
 ### CONDUCTING THE ATTACK
 
@@ -82,10 +89,19 @@ thay thế địa chỉ trả về của stack thành esp
 
 ![alt text](../images/image-45.png)
 
-bộ nhớ stack sau khi thay thế địa chỉ trả về của stack thành esp
+BBộ nhớ stack sau khi thay thế địa chỉ trả về của stack thành esp
 
 ![alt text](../images/image-46.png)
 
-chạy tiếp
+Chạy tiếp
 
 ![alt text](../images/image-47.png)
+
+dùng lệnh `rm -r -f dummyfile` để xóa file
+
+Kết quả
+
+![image](https://github.com/user-attachments/assets/f05668d6-1904-4819-a99b-0cff5858fa52)
+
+
+
