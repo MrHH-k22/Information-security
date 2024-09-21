@@ -1,3 +1,7 @@
+# bof1.c
+
+source
+
 ![image](https://github.com/user-attachments/assets/b2479ce0-366d-4b41-be08-9482478ccca8)
 
 Trong chương trình này, ta thấy được lỗ hổng buffer overflow nằm trong hàm vuln() là hàm get().
