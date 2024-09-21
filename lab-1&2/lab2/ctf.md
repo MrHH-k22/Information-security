@@ -16,7 +16,7 @@ Tắt chế độ cấp phát địa chỉ stack ngẫu nhiên:
 
 biên dịch chương trình ctf.c
 
-![alt text](images/image-27.png)
+![alt text](../images/image-27.png)
 
 chạy gdb để xem địa chỉ của hàm myfunc:
 
