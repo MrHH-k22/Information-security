@@ -1,4 +1,4 @@
-![alt text](images/image-18.png)
+![image](https://github.com/user-attachments/assets/211fed6a-6e2f-4530-8a42-cd4d5ca50004)
 
 Chương trình này, ta thấy được biến buf có kích thước 128 byte, nhưng hàm fgets cho phép đọc 136 byte, nên là có thể ghi quá giới hạn của biến buf và ghi đè các giá trị nằm sau nó trong bộ nhớ, dẫn tới buffer overflow
 
