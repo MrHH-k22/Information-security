@@ -1,3 +1,7 @@
+# bof2.c
+
+source:
+
 ![image](https://github.com/user-attachments/assets/503ec49a-8ed1-4b68-9291-8482a4818176)
 
 trong chương trình, ta thấy có lỗ hổng buffer overflow tại hàm fget khi biến buf có kích thước là 40 bytes trong khi fget có thể đọc tới 45 bytes, vì thế người dùng có thể nhập dữ liệu nhiều hơn 40 bytes để có thể ghi đè lên các bytes lân cận
