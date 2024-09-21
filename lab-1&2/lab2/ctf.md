@@ -1,10 +1,10 @@
 # 2. Conduct attack on ctf.c
 
-![alt text](images/image-24.png)
+![alt text](../images/image-24.png)
 
 Hàm vuln() sử dụng strcpy(buf,s) để sao chép đầu vào s vào mảng buf[100]. Tuy nhiên, hàm strcpy không kiểm tra đầu vào, nên nếu chuỗi s nhập hơn 100 ký tự, nó sẽ ghi đè lên các byte lân cận, gây ra buffer overflow
 
-![alt text](images/image-25.png)
+![alt text](../images/image-25.png)
 
 mục tiêu là đè địa chỉ trả về của hàm vuln thành địa chỉ của hàm myfunc thì mới có thể chạy được hàm myfunc
 
@@ -12,7 +12,7 @@ Tắt chế độ cấp phát địa chỉ stack ngẫu nhiên:
 
 `sudo sysctl -w kernel.randomize_va_space=0`
 
-![alt text](images/image-26.png)
+![alt text](../images/image-26.png)
 
 biên dịch chương trình ctf.c
 
@@ -20,7 +20,7 @@ biên dịch chương trình ctf.c
 
 chạy gdb để xem địa chỉ của hàm myfunc:
 
-![alt text](images/image-28.png)
+![alt text](../images/image-28.png)
 
 => Địa chỉ: 0x0804851b
 
@@ -28,7 +28,7 @@ chạy gdb để xem địa chỉ của hàm myfunc:
 
 Stack sau khi đè lên giá trị trở về của hàm vuln():
 
-![alt text](images/image-30.png)
+![alt text](../images/image-30.png)
 
 Giờ để lấy được flag ta cần phải vượt qua các chướng ngại vật sau:
 
