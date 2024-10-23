@@ -87,9 +87,29 @@ exploit the stackframe:
 - 20 bytes to overflow buf and ebp
 - 4 bytes for system address
 - 4 byes for exit address
-- 4 bytes for the exploitPath
+- 4 bytes for the argument of system
 
-# find addresses
+# 5 create the environment variable
+
+use `pwd` to find the current path
+
+=> my current path is: /home/seed/seclabs
+
+create new environment:
+
+`export exploitPath="/home/seed/seclabs/shellcode.o"`
+
+![image](https://github.com/user-attachments/assets/39487317-5422-40f5-8b51-41048c6efc8f)
+
+check again with command: `env`
+
+![image](https://github.com/user-attachments/assets/25e1123e-70ea-48df-80b0-3505a6992e1f)
+
+
+
+
+
+# 6 find addresses
 
 ![image](https://github.com/user-attachments/assets/138f0c49-d1b9-4d38-81e3-f87496f4e1af)
 
