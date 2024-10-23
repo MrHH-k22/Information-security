@@ -85,7 +85,7 @@ exploit the stackframe:
 
 - 20 bytes to overflow buf and ebp
 - 4 bytes for system address
-
+- 
 
 # Task 2: Attack on the database of bWapp 
 - Install bWapp (refer to quang-ute/Security-labs/Web-security). 
@@ -191,6 +191,18 @@ Users information:
 
 **Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
 
+hash file:
+
+![image](https://github.com/user-attachments/assets/b55b6bb9-fcf8-40b8-be8e-6c803fc56b7a)
+
+i already install john before:
+
+use this command to hash:
+
+`sudo ./john hashes.txt`
+
 **Answer 3**:
+
+![image](https://github.com/user-attachments/assets/1e19bfb8-baf1-4bf6-a8a7-41a27197012d)
 
 
