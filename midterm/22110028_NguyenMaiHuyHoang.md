@@ -176,7 +176,7 @@ Get the cookies to attack:
 
 ![image](https://github.com/user-attachments/assets/7dde2c3d-4030-4192-ae7f-eed1728b1aba)
 
-cookies value: e0cihvhout750mn5fh0tfoevl4
+cookies value: rai86trmqhl5ee4g2h6halric5
 
 
 **Question 1**: Use sqlmap to get information about all available databases
