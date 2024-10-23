@@ -105,16 +105,14 @@ check again with command: `env`
 
 ![image](https://github.com/user-attachments/assets/25e1123e-70ea-48df-80b0-3505a6992e1f)
 
-
-
-
-
 # 6 find addresses
 
 ![image](https://github.com/user-attachments/assets/138f0c49-d1b9-4d38-81e3-f87496f4e1af)
 
 system: 0xf7e50db0
+
 exit: 	0xf7e449e0
+
 exploitPath: 0xffffd998
 
 final command:
@@ -124,6 +122,11 @@ final command:
 result:
 
 ![image](https://github.com/user-attachments/assets/fde15867-2484-4f7b-b2af-bac1f75e0097)
+
+the /etc/shadow permission has change to 777
+
+![image](https://github.com/user-attachments/assets/329aa9cf-cba8-4b9b-ae7a-753540f2f860)
+
 
 **Conclusion**: 
 
